@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
 function calculateIncome() {
     const netIncome = parseFloat(document.getElementById("netIncome").value);
 
-    if (isNaN(netIncome)) {
+    if (isNaN(netIncome) || (netIncome < 0)) {
         alert("Please enter a valid number for net income.");
         return;
     }
