@@ -1,12 +1,16 @@
 body {
     background-image: url("pictures/teslapic.JPG");
     background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     font-family: Arial, sans-serif;
+    font-size: 1vw;
     margin: 20px;
 }
 
 label, input {
     margin-bottom: 15px;
+    font-size: 1vw;
 }
 
 .my-btn {
@@ -19,9 +23,12 @@ label, input {
     text-align: center;
     font-family: Arial, sans-serif;
     font-weight: bold;
+    font-size: 1vw;
 }
 
-.my-btn:hover {background-color: #eeff00}
+.my-btn:hover {
+    background-color: #eeff00
+}
 
 .my-btn:active {
   background-color: #c3d100;
