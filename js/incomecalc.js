@@ -5,18 +5,18 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function calculateIncome() {
-    const netIncome = parseFloat(document.getElementById("netIncome").value);
+    const grossIncome = parseFloat(document.getElementById("grossIncome").value);
 
-    if (isNaN(netIncome) || (netIncome < 0)) {
+    if (isNaN(grossIncome) || (grossIncome < 0)) {
         alert("Please enter a valid number for net income.");
         return;
     }
 
-    const grossMain = (netIncome * 0.35).toFixed(2);
-    const grossCalc1 = (grossMain * 0.07).toFixed(2);
-    const grossCalc2 = (grossMain * 0.0715).toFixed(2);
-    const grossCalc3 = (grossMain * 0.015).toFixed(2);
-    const grossIncome = (grossMain - grossCalc1 - grossCalc2 - grossCalc3).toFixed(2);
+    const netMain = (grossIncome * 0.35).toFixed(2);
+    const netCalc1 = (netMain * 0.07).toFixed(2);
+    const netCalc2 = (netMain * 0.0715).toFixed(2);
+    const netCalc3 = (netMain * 0.015).toFixed(2);
+    const netIncome = (netMain - netCalc1 - netCalc2 - netCalc3).toFixed(2);
 
-    document.getElementById("grossIncome").textContent = grossIncome;
+    document.getElementById("netIncome").textContent = netIncome;
 }
