@@ -1,0 +1,35 @@
+body {
+    background-image: url("pictures/teslapic.JPG");
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+label, input {
+    margin-bottom: 15px;
+}
+
+.my-btn {
+    background-color:#eeff00;
+    color: #000000;
+    border:none;
+    border-radius:10px;
+    box-shadow: 3px 3px 3px gray;
+    padding: 5px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.my-btn:hover {background-color: #eeff00}
+
+.my-btn:active {
+  background-color: #c3d100;
+  box-shadow: 1px 1px 1px #666;
+  transform: translateY(4px);
+}
+
+#results {
+    margin-top: 20px;
+    font-weight: bold;
+}
